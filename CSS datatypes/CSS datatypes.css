@@ -1,0 +1,154 @@
+CSS data types- 
+A. Data types of values that can be used for various CSS properties. 
+B. Each CSS property expects a specific type of value, and understanding these data types is essential for properly styling and formatting web content.
+
+The types listed below are the most common, however it is not a complete list of all types defined in any CSS specification.
+
+Syntax : 
+selector {
+   property: <unit-data-type>;
+}      
+
+I. CSS syntax uses a keyword between the inequality signs "<" and ">" to indicate data types.
+Textual Data Types
+
+II. These types include keywords, identifiers, strings, and URLs.
+Pre-defined Keywords
+
+III. Represents a predefined keyword that is specific to the property it's used with (e.g., auto, inherit, none).
+CSS-wide keywords
+
+The table given below lists all the CSS-wide keywords:
+1. <custom-ident>- 
+A user-defined identifier, such as a name given with the grid-area property.
+2. <dashed-ident> - 
+Using CSS Custom Properties, a <custom-ident> begin with two dashes.
+3. <string> - 
+A string that has been quoted, such as the value for the content property.
+4. url() - 
+A reference to a resource, such the background-image value.
+
+Numeric Data Types
+
+These data types represent quantities, indexes, and positions. The following table lists all the numeric data types:
+Property 	Description
+1. <integer> - 
+One or more decimal units (0–9).
+2. <number> - 
+Real numbers may include a fractional component, such as 1 or 1.54.
+3. <dimension> - 
+A numerical value that includes a unit, such as 23px or 15em.
+4. <percentage> - 
+A numerical value that includes a percentage symbol, such as 15%.
+5. <ratio> - 
+A ratio is represented as <number> / <number>.
+6. <flex> - 
+CSS Grid Layout introduces a flexible length, represented by a <number> with the fr unit attached for grid track sizing.
+Quantities
+
+Distance and other quantities are defined using these types. The following table lists all the quantities:
+1. <length>  - 
+Lengths are a dimension that refers to distances.
+2. <angle> - 
+Angles are represented as a <dimension> with deg, grad, rad, or turn units, and used in properties such as linear-gradient().
+3. <time> - 
+Duration units are represented as a <dimension> with a s or ms unit.
+4. <resolution> - 
+This is a <dimension> with the unit identifier dpi, dpcm, dppx, or x.
+
+Combinations of Types
+
+CSS properties that accept both a dimension and a percentage value fall in this category. The percentage value will be converted to a quantity relative to the allowable dimension. Properties that take both a percentage and a dimension will use one of the following types:
+Property 	Description
+1. <length-percentage>  - 
+length type that can take a a length or a percentage value.
+2. <angle-percentage> 	
+Angle Percentage type that can take a a angle or a percentage value.
+3. <time-percentage> - 
+A type that can take a a time or a percentage value.
+
+Color
+Color related properties define the <color> data type and additional types related to colors.
+
+The following table lists all the color related data types:
+
+1. <color> - 
+The color represented as a keyword or a numerical value.
+2. <color-interpolation-method> - 
+Here Determines the color space used when creating a transition between different <color> values.
+3. <hex-color> - 
+Its Describes the hexadecimal color syntax of an sRGB color using the primary color components (red, green, blue) denoted as hexadecimal numbers, along with its transparency.
+4. <system-color> - 
+Here Commonly linked to the default color selections for different components on a webpage.
+5. <alpha-value> - 
+It Represents the transparency of a color. The value can be either a <number> (0 is fully transparent, 1 is fully opaque) or a <percentage> (0 is fully transparent, 100% is fully opaque).
+6. <hue> - 
+Hue can define the <angle> of the color wheel for the <absolute-color-functions> component using units such as, deg, grad, rad, turn, or a unitless number (interpreted as deg).
+7. <hue-interpolation-method> - 
+Hue- interpolation defines the algorithm that is used for interpolation between hue values. This method specifies how to find a midpoint between two hue values based on a color wheel. It is a component of the <color-interpolation-method> data type.
+8. <named-color> - 
+Here Specified as a <ident> in syntax, depicts colors by names such as red, blue, black, or light green.
+
+Images
+
+CSS Images Specification defines image-related data types, such as gradients. The following table lists all the images related data types:
+
+<image> - 
+image URL pointing to an image or color gradient.
+2D Positioning
+
+The following table lists all the 2D Positioning related data types:
+1. <position> - 
+Position can determines the position of an object region by providing a keyword value, such as top or left, or a <length-percentage>.
+Calculation Data Types
+
+CSS math functions use these data types in calculations. The following table lists all the calculation data types:
+
+1. <calc-sum> - 
+The calculation is a series of calculated values separated by addition (+) and subtraction (-) operators. This data type requires that both values contain units.
+2. <calc-constant> - 
+The CSS keywords for numeric constants such as e and π, which can be used in CSS math functions.
+Display
+
+The table given below lists all the display related data types:
+1. <display-box> - 
+if an element creates display boxes or not.
+2. <display-inside> - 
+The inner display of an element, which specifies the formatting context type, for a non-replaced element.
+3. <display-internal> - 
+The internal display values, which have relevance only to that particular layout model.
+4. <display-legacy> - 
+Now single-keyword syntax has been used for display property in CSS 2, which required separate keywords for block-level and inline-level variants of the same layout model.
+5. <display-listitem> - 
+The keyword list-item makes the element to generate a ::marker pseudo-element with the content that is specified by the list-style properties, along with a main box of the specified type for its own contents.
+6. <display-outside> - 
+An element's outer display type, which is essential in flow layout, is determined by the <display-outside> keywords.
+Other Data Types
+
+The table given below lists some more data types:
+1. <absolute-size> - 
+absolute font size in the font shorthand and font-size properties.
+2. <basic-shape> - 
+In basic-shapes different shapes used for properties such as clip-path, shape-outside, and offset-path.
+3. <blend-mode>  - 
+Specifies the color scheme that should be used when elements overlap.
+4. <box-edge> - 
+Here the different box edges, such as content-box and border-box.
+5. <easing-function> - 
+For easing-funtion was Control the speed of a transition or animation between two states of an element.
+6. <filter-function> - 
+The filter-function Signifies a graphical effect, which changes the appearance of an input image.
+7. <generic-family> - 
+generic- family Signifies the keyword values for generic font families.
+8. <gradient> - 
+gradient Defines a progressive transition between two or more colors.
+9. <ident> - 
+ident Signifies an arbitrary string that is used as an identifier.
+10. <line-style> - 
+Here the linw-style says. How a line appears or doesn't appear in a certain context are included in the <line-style> enumerated value type.
+11. <overflow> - 
+The over flow keyword used in relation to the shorthand overflow property and the longhand overflow-block, overflow-inline, overflow-x, and overflow-y properties are indicated by the enumerated value type <overflow>.
+12. <relative-size> - 
+relative-size define a relative size to the calculated size of the parent element.
+13. <transform-function> - 
+The transformation functions are responsible for rotating, scaling (resizing), skewing (distorting), or moving an element in two-dimensional (2D) and three-dimensional (3D) space.
